@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Home</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            background-color: peachpuff;
+            height: 75vh;
+            margin-left: 8vh;
+            margin-right: 8vh;
+        }
+
+        .nav{
+            height: 10vh;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content:space-between;
+            
+        }
+
+        .navlist li{
+            display: inline-block;
+            font-size: medium;
+            font-weight: 200;
+            color: black;
+            /* border: 1px solid black; */
+            border-radius: 5px;
+            transition: all ease .8;
+            padding: .5rem;
+        }
+
+        .activity li{
+            display: inline-block;
+            font-size: medium;
+            font-weight: 200;
+            color: black;
+            border-radius: 5px;
+            transition: all ease .8;
+            padding: .5rem;
+        }
+
+        .navlist li:hover{
+            cursor: pointer;
+            color: black;
+            background-color: peachpuff;
+        }
+
+        .activity li:hover{
+            cursor: pointer;
+            color: black;
+            background-color: peachpuff;
+        }
+
+        #button{
+            border: 2px solid black;
+            border-radius: 5px;
+            font-weight: bolder;
+        }
+
+        .mainbox{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #fruits{
+            background-image: url(fruit.png);
+            background-size: cover;
+            background-position-x: 15rem;
+            display: flex;
+            /* justify-content: ; */
+            /* background-repeat: no-repeat; */
+            /* background-color: antiquewhite; */
+            height: 58vh;
+            width: 24vw;
+            scale: 65%;
+            filter: drop-shadow(5px 5px 5px grey);
+        }
+
+        #textpara{
+            padding-top: 20vh;
+        }
+
+        #text{
+            text-align: left;
+            font-size: small;
+        }
+        #shop{
+            border-radius: 3px;
+            background-color: rgb(223, 88, 144);
+            color: white;
+            box-shadow: 3px;
+            padding: 5px;
+            border: 1px solid rgb(238, 88, 113);
+            box-shadow: 3px 3px black;
+            font-weight: bold;
+        }
+        #shop:hover{
+            cursor: pointer;
+            background-color: rgb(240, 200, 200);
+            color:black;
+        }
+
+        #note{
+            font-size: smaller;
+            margin-left: 30vh;
+        }
+
+        #india{
+            height: 20px;
+            width: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <ul class="navlist">
+                <li id="button">Soylent</li>
+                <li>Drink</li>
+                <li>Cafe</li>
+                <li>Powder</li>
+                <li>All Products</li>
+            </ul>
+            <ul class="activity">
+                <li><img src="india.png" alt="india" id="india"></li>
+                <li>Login</li>
+                <li>Refer</li>
+                <li>Cart (0)</li>
+            </ul>
+        </div>
+        <div class="mainbox">
+        <section id="fruits"></section>
+        <section id="textpara">
+            <h1>Fruit is back!</h1> <br>
+            <p id="text">Soylent Strawberry is like the strawberry milk you loved as a kid - <br>
+                but it has 20g of protein, 20% of your daily recommended <br>
+                micronutrients and your mom doesn't have to make it for you.
+            </p>
+            <br>
+            <!-- <input type="button" id="shop"> Shop now -->
+            <button id="shop">Shop now</button>
+        </section>
+    </div>
+    </div>
+    <br>
+        <section id="note">
+            <p>Now two bottles to serve you! <a href="" id="link">Click here</a> to learn more about our new bottle</p>
+        </section>
+    <br>
+    <hr>
+
+</body>
+</html>
